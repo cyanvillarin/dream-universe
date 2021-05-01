@@ -29,11 +29,15 @@ class HomeViewController: UIViewController {
          })
       }
       
-      self.title = "Swimming Gems"
+      self.title = "Dream Universe"
       navigationController?.navigationBar.barTintColor = navigationBarThemeColor
       navigationController?.navigationBar.tintColor = UIColor.white
       navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
       navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: navigationBarThemeColor]
+      
+      let backButton = UIBarButtonItem()
+      backButton.title = "Back"
+      navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
       
       // config googleAds
       var adUnitId = ""

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -24,15 +25,9 @@
                             <constraint firstAttribute="height" constant="60" id="AYC-7i-xH5"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nishigikoi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg9-je-pUa">
-                        <rect key="frame" x="89" y="24" width="80" height="21"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西義恋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6V-pA-Ru9">
-                        <rect key="frame" x="89" y="47" width="49" height="20"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nishigikoi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg9-je-pUa">
+                        <rect key="frame" x="89" y="14" width="263" height="64"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -47,19 +42,18 @@
                 <constraints>
                     <constraint firstItem="Rg9-je-pUa" firstAttribute="leading" secondItem="Ra3-b1-mwA" secondAttribute="trailing" constant="14" id="2Uv-Qj-1j1"/>
                     <constraint firstItem="Ra3-b1-mwA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3mf-n3-l67"/>
-                    <constraint firstItem="q6V-pA-Ru9" firstAttribute="leading" secondItem="Rg9-je-pUa" secondAttribute="leading" id="Cik-6l-hB0"/>
                     <constraint firstAttribute="trailing" secondItem="Unk-0z-dh8" secondAttribute="trailing" constant="25" id="GCB-ph-YIs"/>
                     <constraint firstItem="Ra3-b1-mwA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="R1A-tS-eGf"/>
-                    <constraint firstItem="Rg9-je-pUa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-12" id="Vtm-4d-Tb3"/>
+                    <constraint firstItem="Unk-0z-dh8" firstAttribute="top" secondItem="Rg9-je-pUa" secondAttribute="bottom" constant="14" id="jOJ-Ct-M3V"/>
                     <constraint firstAttribute="bottom" secondItem="Unk-0z-dh8" secondAttribute="bottom" id="lFt-lB-3wP"/>
-                    <constraint firstItem="q6V-pA-Ru9" firstAttribute="top" secondItem="Rg9-je-pUa" secondAttribute="bottom" constant="2" id="obA-7E-fVJ"/>
                     <constraint firstItem="Unk-0z-dh8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="pC9-bi-0Ra"/>
+                    <constraint firstItem="Rg9-je-pUa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="t9e-kZ-bhs"/>
+                    <constraint firstAttribute="trailing" secondItem="Rg9-je-pUa" secondAttribute="trailing" constant="25" id="zhm-Fv-72T"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="itemImageView" destination="Ra3-b1-mwA" id="6eB-ZW-pxY"/>
-                <outlet property="subtitleLabel" destination="q6V-pA-Ru9" id="gyf-kg-p8f"/>
                 <outlet property="titleLabel" destination="Rg9-je-pUa" id="izM-yu-Ggu"/>
             </connections>
             <point key="canvasLocation" x="103.62318840579711" y="92.745535714285708"/>

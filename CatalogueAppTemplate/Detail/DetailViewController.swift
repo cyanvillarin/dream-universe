@@ -12,7 +12,7 @@ import Nuke
 class DetailViewController: UIViewController {
    
    @IBOutlet var itemImageView: UIImageView!
-   @IBOutlet var subtitleLabel: UILabel!
+   @IBOutlet var questionLabel: UILabel!
    @IBOutlet var descriptionLabel: CustomTextView!
    @IBOutlet var referenceLabel: UILabel!
    
@@ -20,15 +20,11 @@ class DetailViewController: UIViewController {
    
    override func viewDidLoad() {
       super.viewDidLoad()
-      self.title = itemData.title
+      
+      self.title = ""
       self.navigationItem.largeTitleDisplayMode = .never
       
-      let backButton = UIBarButtonItem()
-      backButton.title = "Back"
-      navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
-      
-      itemImageView.layer.cornerRadius = 8.0
-      itemImageView.layer.masksToBounds = true
+      itemImageView.contentMode = .scaleAspectFill
       
       if let imageURL = URL(string: itemData.image_link) {
          let options = ImageLoadingOptions(
@@ -39,8 +35,7 @@ class DetailViewController: UIViewController {
          )
          Nuke.loadImage(with: imageURL, options: options, into: itemImageView)
       }
-      
-      subtitleLabel.text = itemData.subtitle
+      questionLabel.text = itemData.title
       descriptionLabel.text = itemData.description
       descriptionLabel.isUserInteractionEnabled = false
       referenceLabel.text = itemData.reference

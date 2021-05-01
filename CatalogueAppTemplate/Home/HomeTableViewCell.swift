@@ -10,7 +10,6 @@ import UIKit
 class HomeTableViewCell: UITableViewCell {
    
    @IBOutlet var titleLabel: UILabel!
-   @IBOutlet var subtitleLabel: UILabel!
    @IBOutlet var itemImageView: UIImageView!
    
    override func awakeFromNib() {
@@ -25,7 +24,6 @@ class HomeTableViewCell: UITableViewCell {
    
    func initWithData(data: ItemObject) {
       titleLabel.text = data.title
-      subtitleLabel.text = data.subtitle
    }
    
 }
