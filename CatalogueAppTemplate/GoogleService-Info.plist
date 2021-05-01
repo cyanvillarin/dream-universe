@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>460514112975-2o6njj6o3k0kt0nd0av8c69678n3jjhf.apps.googleusercontent.com</string>
+	<string>313818772403-mt83q1155b1690nmbt8h5on1gbivp6l7.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.460514112975-2o6njj6o3k0kt0nd0av8c69678n3jjhf</string>
+	<string>com.googleusercontent.apps.313818772403-mt83q1155b1690nmbt8h5on1gbivp6l7</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDjt02-e04sHIRe04Rj2mrLAVdb2N-qzwE</string>
+	<string>AIzaSyAw-tpJJ4vDQCUeV_Q3JaTZUJk6Pvhtgl8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>460514112975</string>
+	<string>313818772403</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.cyanvillarin.swimminggems</string>
+	<string>com.cyanvillarin.dreams</string>
 	<key>PROJECT_ID</key>
-	<string>swimming-gems</string>
+	<string>dream-universe-c7893</string>
 	<key>STORAGE_BUCKET</key>
-	<string>swimming-gems.appspot.com</string>
+	<string>dream-universe-c7893.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:460514112975:ios:3b8299932c952eab318eba</string>
+	<string>1:313818772403:ios:44e67c4602751e87f751c6</string>
 	<key>ADMOB_APP_ID</key>
-	<string>ca-app-pub-8855918227783661~1384483604</string>
+	<string>ca-app-pub-8855918227783661~3290685546</string>
 </dict>
 </plist>
